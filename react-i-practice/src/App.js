@@ -29,7 +29,7 @@ class App extends Component {
 
     render() {
         return (
-            <div>
+            <article>
                 <h1>Formulario de Usuario</h1>
                 <UserForm onUser ={this.handleUser } />
                 <ContactForm onContact={this.handleContact} />
@@ -39,7 +39,7 @@ class App extends Component {
                     contactData={this.state.contactData} 
                     paymentData={this.state.paymentData} 
                 />
-            </div>
+            </article>
         );
     }
 }

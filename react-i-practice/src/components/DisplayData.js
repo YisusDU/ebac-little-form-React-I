@@ -17,7 +17,7 @@ class DisplayData extends Component {
     render() {
         const { userData, contactData, paymentData } = this.props;
         return (
-            <main>
+            <section>
                 <h2>Datos del Usuario</h2>
                 <p>Nombre: {userData.name}</p>
                 <p>Edad: {userData.age}</p>
@@ -29,7 +29,7 @@ class DisplayData extends Component {
                 <h2>Datos de Pago</h2>
                 <p>Número de Tarjeta: {paymentData.cardNumber}</p>
                 <p>Fecha de Expiración: {paymentData.expirationDate}</p>
-            </main>
+            </section>
         );
     }
 }
